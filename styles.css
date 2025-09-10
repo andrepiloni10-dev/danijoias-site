@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+/* Banner */
+header .banner {
+  background-color: #f8f0e3;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+header h1 {
+  color: #d4af37;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+/* Menu de navegação */
+nav {
+  background-color: #d4af37;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  margin: 5px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff2cc;
+}
+
+/* Container de produtos */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cada produto */
+.product {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Imagens do mesmo tamanho e responsivas */
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Preço em destaque */
+.product .price {
+  font-weight: bold;
+  color: #d4af37;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f0e3;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .product {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
